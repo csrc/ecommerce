@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-
+    <script type="module" src="index.js"></script>
 </head>
 
 <body>
@@ -16,7 +16,94 @@
             <img src="images/logo.png" alt="logo">
         </div>
     </div>
+    <div class="menu">
 
+    </div>
+    <nav class="breadcrumbs" role="navigation" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol class="list">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="./home/" itemprop="item">
+                    <span class="crumbicon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                            <use href="#icon-home" />
+                        </svg>
+                    </span>
+                    <span class="home-label" itemprop="name">Home</span>
+                    <meta itemprop="position" content="1" />
+                </a>
+            </li>
+            <li class="crumb-separator" aria-hidden="true">·</li>
+            <li class="crumb" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="./home/blog/" itemprop="item">
+                    <span itemprop="name">Blog</span>
+                </a>
+                <meta itemprop="position" content="2" />
+                <span class="crumbicon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                        <use href="#icon-dropdown-arrow" />
+                    </svg>
+                    <select class="disguised-select" title="Navigate to another site section">
+                        <option>About</option>
+                        <option selected>RPG</option>
+                        <option>Projects</option>
+                        <option>Clients</option>
+                    </select>
+                </span>
+            </li>
+            <li class="crumb-separator" aria-hidden="true">·</li>
+            <li class="crumb" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="./home/blog/front-end/" itemprop="item">
+                    <span itemprop="name">Front-end</span>
+                </a>
+                <meta itemprop="position" content="3" />
+                <span class="crumbicon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                        <use href="#icon-dropdown-arrow" />
+                    </svg>
+                    <select class="disguised-select" title="Navigate to another category">
+                        <option>Back-end</option>
+                        <option selected>Front-end</option>
+                    </select>
+                </span>
+            </li>
+            <li class="crumb-separator" aria-hidden="true">·</li>
+            <li class="crumb" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="./home/blog/front-end/accessibility/" itemprop="item">
+                    <span itemprop="name">Accessibility</span>
+                </a>
+                <meta itemprop="position" content="4" />
+                <span class="crumbicon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                        <use href="#icon-dropdown-arrow" />
+                    </svg>
+                    <select class="disguised-select" title="Navigate to another topic">
+                        <option>Color</option>
+                        <option>Markup</option>
+                        <option selected>Accessibility</option>
+                        <option>Javascript</option>
+                    </select>
+                </span>
+            </li>
+            <li class="crumb-separator" aria-hidden="true">·</li>
+            <li class="crumb" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a aria-current="page" itemprop="item">
+                    <span itemprop="name">Why you still need role="navigation" on a nav element</span>
+                </a>
+                <meta itemprop="position" content="5" />
+                <span class="crumbicon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                        <use href="#icon-dropdown-arrow" />
+                    </svg>
+                    <select class="disguised-select" title="Navigate to another article">
+                        <option>How to setup roving UX</option>
+                        <option>The trick to good visibly hidden elements</option>
+                        <option selected>Why you still need role="navigation" on a nav element</option>
+                    </select>
+                </span>
+            </li>
+        </ol>
+    </nav>
+    </svg>
     <h1>My First Heading</h1>
     <p>My first paragraph.</p>
 
